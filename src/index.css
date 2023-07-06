@@ -11,3 +11,128 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.stretched {
+  width: 200px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10% 0 10%;
+
+  @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 5px;
+  }
+}
+
+.navbar-title {
+  font-family: 'Nexa Bold';
+  font-size: 56px;
+  color: black;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+      font-size: 40px;
+  }
+
+  @media (max-width: 480px) {
+      font-size: 32px;
+  }
+}
+
+.navbar-buttons {
+  display: flex;
+  gap: 10px;
+
+  @media (max-width: 768px) {
+      flex-direction: column;
+      margin-top: 10px;
+  }
+}
+
+.alert {
+  background-color: #cfea75;
+  color: #008c15;
+  padding: 12px;
+  border-radius: 80px;
+  margin-top: 20px;
+  margin-left: 25%;
+  text-align: center;
+}
+
+.alert-content {
+  font-weight: bold;
+}
+
+.popup-show {
+  position: relative;
+  background-color: #60a69e;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  margin: 15px 0 0 16%;
+  width: 150px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  z-index: 999;
+}
+
+.popup-hide {
+  position: relative;
+  background-color: #60a69e;
+  border: 1px solid #60a69e;
+  border-radius: 8px;
+  margin: 15px 0 0 16%;
+  width: 150px;
+  /* box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); */
+  z-index: 999;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10% 0 10%;
+
+  @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 5px;
+  }
+}
+
+.project-container h2 {
+  font-family: 'Nexa Bold';
+  color: #f1ebcd
+}
+
+.project-container p {
+  font-family: 'Crimson Pro';
+  font-size: 16px;
+}
+
+.contact-form h2{
+  font-family: 'Nexa Bold';
+}
+
+.contact-form h4{
+  font-family: 'Nexa Light';
+  font-size: 20px;
+}
+
+.contact-form p{
+  font-family: 'Crimson Pro';
+  font-size: 16px;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  
+  @media (max-width: 768px) {
+    margin-top: 10px;
+  }
+}
