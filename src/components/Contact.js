@@ -26,6 +26,11 @@ function Contact() {
   function handleSubmit(e) {
     e.preventDefault();
 
+    if (!formData.from_name || !formData.reply_to || !formData.subject || !formData.message) {
+        alert('Please fill out all form fields before submitting.');
+        return;
+      }
+
     const serviceId = 'service_d14cu7r';
     const templateId = 'template_4on1nqq';
     const userId = 'Poj2GZTMk1TRVJq3O';
@@ -165,7 +170,7 @@ function Contact() {
                                     />
                                 </div>
                             </Form.Field>
-                            <Button style={{marginLeft: '40%', fontFamily: 'Nexa Bold' }}>send</Button>
+                            <Button className="ui teal basic button" style={{marginLeft: '40%', fontFamily: 'Nexa Bold' }}>send</Button>
                         </Form>
                         <br/>
                         {alertMessage && (
