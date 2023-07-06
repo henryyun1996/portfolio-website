@@ -22,9 +22,9 @@ function NavBar() {
                 </h2>
             </div>
             <div className="navbar-buttons">
-                <Button className="ui teal basic button" to="/about-me" style={{ fontFamily: 'Nexa Bold' }}>about me!</Button>
-                <Button className="ui teal basic button" to="/portfolio" style={{ fontFamily: 'Nexa Bold' }}>portfolio</Button>
-                <Button className="ui teal basic button" to="/contact" style={{ fontFamily: 'Nexa Bold' }}>contact</Button>
+                <Button className="ui teal basic button" onClick={(e) => window.location.href = "/about-me"} style={{ fontFamily: 'Nexa Bold' }}>about me!</Button>
+                <Button className="ui teal basic button" onClick={(e) => window.location.href = "/portfolio"} style={{ fontFamily: 'Nexa Bold' }}>portfolio</Button>
+                <Button className="ui teal basic button" onClick={(e) => window.location.href = "/contact"} style={{ fontFamily: 'Nexa Bold' }}>contact</Button>
                 <Link to="/">
                     <Button className="ui teal basic button"><i className="sign out alternate icon"></i></Button>
                 </Link>
